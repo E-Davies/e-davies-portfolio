@@ -98,13 +98,28 @@ a {
     background-image: url("../images/B&W-laptop.jpg");
 }
 
-/*Set the h3 & p of each project tile to be hidden and to appear on hover */
+/* this gives the images on the project tile a darker colour when hovered over */
+.darken:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
 
-/* .darken {
-    display: flex;
-    align-content: center;
-} */
+/* this makes the hover-card appear on hover to show more project info */
+.darken:hover > .hover-card {
+    transition: .5s ease;
+    opacity: 1;
+}
 
+/* this makes the project display-title disappear on hover to show the hover-card that has more project info */
+.darken:hover > .display-title {
+    transition: .5s ease;
+    opacity: 0;
+}
+
+/* this is the visable title of each project tile - it dissapears on hover to show full project details (hover-card) */
 .display-title {
     display: flex;
     flex-direction: column;
@@ -119,10 +134,7 @@ a {
     border-radius: 3px;
 }
 
-/* .display-title:hover {
-    opacity: 0;
-} */
-
+/*Sets the container of the h3 & p of each project tile to be hidden (it will appear on hover) */
 .hover-card {
     display: flex;
     flex-direction: column;
@@ -136,24 +148,6 @@ a {
     padding: 0 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 3px;
-}
-
-.darken:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 300px;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-.darken:hover > .hover-card {
-    transition: .5s ease;
-    opacity: 1;
-}
-
-.darken:hover > .display-title {
-    transition: .5s ease;
-    opacity: 0;
 }
 
 #contact-me ul {
