@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+
+header {
+    background-color: lightblue;
+    padding: 20px; 
+}
+
+nav {
+    background-color: grey;
+    padding: 20px; 
+}
+
+#hero-banner {
+    background-color: yellow;
+}
+
+main {
+    margin: 50px 20px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+main h2 {
+    color: blue;
+    padding-bottom: 30px;
+    justify-items: center;
+    background-color: pink;
+}
+
+section {
+    margin: 50px 0px;
+}
+
+/* This is to set out the grid layout of the project work section*/
+
+#my-work {
+ display: flex;
+ flex-direction: column;
+ align-items: center; 
+}
+
+#project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "project1 project1"
+    "project2 project3"
+    "project4 project5";
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* This section sets sytles for each tile in the project work grid*/
+
+.grid-item {
+    border: 2px solid blue;
+    border-bottom: 10px solid blue;
+    background-position: center;
+    background-size: cover;
+    margin: 5px;
+    cursor: pointer;
+    height: 300px;
+    border-radius: 3px;
+}
+
+#project1 {
+    grid-area: project1;
+    background-image: url("../images/project-table.jpg");
+}
+
+#project2 {
+    grid-area: project2;
+    background-image: url("../images/colab-project.jpg");
+}
+
+#project3 {
+    grid-area: project3;
+    background-image: url("../images/laptop-and-notes-on-table.jpg");
+}
+
+#project4 {
+    grid-area: project4;
+    background-image: url("../images/closing-laptop.jpg");
+}
+
+#project5 {
+    grid-area: project5;
+    background-image: url("../images/B&W-laptop.jpg");
+}
+
+/*Set the h3 & p of each project tile to be hidden and to appear on hover */
+
+/* .darken {
+    display: flex;
+    align-content: center;
+} */
+
+.display-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    position: relative;
+    top: 220px;
+    left: 20px;
+    height: 60px;
+    width: 60%;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+}
+
+/* .display-title:hover {
+    opacity: 0;
+} */
+
+.hover-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    position: relative;
+    top: 19px;
+    left: 20px;
+    height: 200px;
+    width: 60%;
+    opacity: 0;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+}
+
+.darken:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.darken:hover > .hover-card {
+    transition: .5s ease;
+    opacity: 1;
+}
+
+.darken:hover > .display-title {
+    transition: .5s ease;
+    opacity: 0;
+}
+
+#contact-me ul {
+    padding: 30px;
+}
+
+footer {
+    height: 200px;
+    background-color: rgba(250, 128, 114, 0.503);
+    display: flex;
+}
+
+footer p {
+    margin: 10px;
+    justify-content: center;
+}
+
