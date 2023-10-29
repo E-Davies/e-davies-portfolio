@@ -2,48 +2,122 @@
     margin: 0;
     padding: 0;
     text-align: justify;
+    color: whitesmoke;
 }
 
+body {
+    background-color: #1A1A12;
+}
+
+header, #about-me, #my-work, #contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 50px;
+    padding: 0 60px;
+}
+
+/* --------------------------------Title / Nav------------------------------------------- */
 
 header {
-    background-color: lightblue;
     padding: 20px; 
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+h1 {
+    font-size: 60px;
+    padding-bottom: 30px;
 }
 
 nav {
-    background-color: grey;
+    position: relative;
+    left: -20px;
+    bottom: -20px;
+    font-size: 30px;
     padding: 20px; 
+    background-color: #c57ff3;
+    width: 100vw;
 }
 
-#hero-banner {
-    background-color: yellow;
+#nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
+
+#nav-container a:hover {
+    color: gray;
+}
+
+/* #nav-container p:hover {
+    transform: scale(1.2);
+    font-weight: 800;
+} */
+
+a {
+    text-decoration: none;
+}
+
+/* --------------------------------Hero------------------------------------------- */
+
+#hero-container {
+    position: relative;
+}
+
+#hero-container img {
+    height: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+#hero-container h2 {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    background-color: #c57ff3;
+    color: white;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+/* --------------------------------Main------------------------------------------- */
 
 main {
-    margin: 50px 20px;
-    /* display: flex;
-    flex-direction: column; */
+    margin: auto 20px;
 }
 
-main h2 {
-    color: blue;
+/* --------------------------------About Me------------------------------------------- */
+
+#about-me {
+    font-size: 20px;
+}
+
+#about-me h2 {
     padding-bottom: 30px;
-    justify-items: center;
-    background-color: pink;
 }
 
-section {
-    margin: 50px 0px;
+/* --------------------------------My Work - Project grid area------------------------------------------- */
+
+#my-work h2 {
+    margin: 50px 0;
+}
+
+#my-work h3 {
+    font-size: 22px;
+}
+
+#my-work p {
+    font-size: 20px;
 }
 
 /* This is to set out the grid layout of the project work section*/
-
-#my-work {
- display: flex;
- flex-direction: column;
- align-items: center; 
-}
-
 #project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -52,22 +126,16 @@ section {
     "project1 project1"
     "project2 project3"
     "project4 project5";
-    width: 80%;
-}
-
-a {
-    text-decoration: none;
-    color: black;
 }
 
 /* This section sets sytles for each tile in the project work grid*/
 
 .grid-item {
-    border: 2px solid blue;
-    border-bottom: 10px solid blue;
+    border: 2px solid #c57ff3;
+    border-bottom: 10px solid #c57ff3;
     background-position: center;
     background-size: cover;
-    margin: 5px;
+    margin: 20px;
     cursor: pointer;
     height: 300px;
     border-radius: 3px;
@@ -113,14 +181,14 @@ a {
     opacity: 1;
 }
 
-/* this makes the project display-title disappear on hover to show the hover-card that has more project info */
-.darken:hover > .display-title {
+/* this makes the project-title disappear on hover to show the hover-card that has more project info */
+.darken:hover > .project-title {
     transition: .5s ease;
     opacity: 0;
 }
 
 /* this is the visable title of each project tile - it dissapears on hover to show full project details (hover-card) */
-.display-title {
+.project-title {
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -132,6 +200,7 @@ a {
     padding: 0 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 3px;
+    color: black;
 }
 
 /*Sets the container of the h3 & p of each project tile to be hidden (it will appear on hover) */
@@ -150,18 +219,80 @@ a {
     border-radius: 3px;
 }
 
+.hover-card * {
+    color: black;
+}
+
+/* --------------------------------Contact Me------------------------------------------- */
+
+#contact-me {
+    margin-bottom: 50px;
+}
+
 #contact-me ul {
     padding: 30px;
 }
 
+#contact-me i {
+    font-size: 30px;
+}
+
+#contact-me i:hover {
+    transform: scale(1.3);
+}
+
+/* --------------------------------Footer------------------------------------------- */
+
 footer {
-    height: 200px;
-    background-color: rgba(250, 128, 114, 0.503);
+    height: 70px;
+    background-color: #c57ff3;
     display: flex;
 }
 
-footer p {
-    margin: 10px;
+footer div {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
 }
 
+footer div > a > i {
+    margin: 20px;
+    justify-content: center;
+    font-size: 30px;
+}
+
+footer div > a > i:hover {
+    transform: scale(1.3);
+}
+
+
+/* --------------------------------Media Queries------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+    header, #about-me, #my-work, #contact-me {
+        padding: 0 20px;
+    }
+
+    #nav-container {
+        font-size: 20px;
+    }
+
+    #project-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "project1"
+        "project2" 
+        "project3"
+        "project4" 
+        "project5";
+    }
+
+    #hero-container h2 {
+        padding: 10px;
+        font-size: 20px;
+    }
+}

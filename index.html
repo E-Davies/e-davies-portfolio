@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://kit.fontawesome.com/63eefc4fba.js" crossorigin="anonymous"></script>
     <title>E-Davies' Portfolio</title>
 </head>
 
@@ -13,7 +14,7 @@
     <!---------------------Title & Nav Bar------------------------------------------->
 
     <header>
-        <h1>E-Davies</h1>
+        <h1 id="title">E-Davies Portfolio</h1>
         <nav>
             <div id="nav-container">
                 <p class="link"><a href="#about-me">About me</a></p>
@@ -26,16 +27,10 @@
     <!---------------------Hero------------------------------------------->
 
     <section id="hero-banner">
-        <div>
-            <pre>
-                My hero banner here
-                My hero banner here
-                My hero banner here
-                My hero banner here
-                My hero banner here
-            </pre>
-        </div>
-        
+        <div id="hero-container">
+            <img src="../images/colourful-banner3.jpg" alt="colourful spots" />
+            <h2>Cool subtitle here!</h2>  
+        </div> 
     </section>
 
 
@@ -50,7 +45,7 @@
             </p>
         </section>
 
-        <!---------------------Project grid area------------------------------------------->
+        <!---------------------My Work - Project grid area------------------------------------------->
 
         <section id="my-work">
 
@@ -62,11 +57,11 @@
                 <!-- <a href="https://this-girl-shall-code.github.io/Snake/" target="_blank"> -->
                     <div id="project1" class="grid-item">
                         <div class="darken">
-                            <h3 class="display-title">Project 1 - Snake Game</h3>
+                            <h3 class="project-title">Project 1 - Snake Game</h3>
                             <div class="hover-card">
                                 <a href="https://this-girl-shall-code.github.io/Snake/" target="_blank">
                                     <h3>Project 1 - Snake Games</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quibusdam necessitatibus molestiae expedita, suscipit consequatur aut officiis enim commodi, facere nisi neque repellat! Accusantium veritatis impedit accusamus, pariatur hic ducimus? Suscipit quod facilis inventore, perferendis voluptate aut porro quis laborum, commodi consequuntur, minima ex voluptas sequi. Culpa cum ipsa maxime eos provident, optio minima. Nesciunt impedit sit laborum cum possimus.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quidem.</p>
                                 </a>
                             </div>
                         </div>
@@ -76,7 +71,7 @@
                 <a href="https://this-girl-shall-code.github.io/Snake/" target="_blank">
                     <div id="project2" class="grid-item">
                         <div class="darken">
-                            <h3 class="display-title">Project 2 - Snake Game</h3>
+                            <h3 class="project-title">Project 2 - Snake Game</h3>
                             <div class="hover-card">
                                 <h3>Project 2</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quidem.</p>
@@ -88,7 +83,7 @@
                 <a href="https://this-girl-shall-code.github.io/Snake/" target="_blank">
                     <div id="project3" class="grid-item">
                         <div class="darken">
-                            <h3 class="display-title">Project 3 - Snake Game</h3>
+                            <h3 class="project-title">Project 3 - Snake Game</h3>
                             <div class="hover-card">
                                 <h3>Project 3</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quidem.</p>
@@ -100,7 +95,7 @@
                 <a href="https://this-girl-shall-code.github.io/Snake/" target="_blank">
                     <div id="project4" class="grid-item">
                         <div class="darken">
-                            <h3 class="display-title">Project 4 - Snake Game</h3>
+                            <h3 class="project-title">Project 4 - Snake Game</h3>
                             <div class="hover-card">
                                 <h3>Project 4</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quidem.</p>
@@ -112,7 +107,7 @@
                 <a href="https://this-girl-shall-code.github.io/Snake/" target="_blank">
                     <div id="project5" class="grid-item">
                         <div class="darken">
-                            <h3 class="display-title">Project 5 - Snake Game</h3>
+                            <h3 class="project-title">Project 5 - Snake Game</h3>
                             <div class="hover-card">
                                 <h3>Project 5</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quidem.</p>
@@ -131,6 +126,7 @@
                 <li>email: <a href="#" target="_blank">wert@gmail.com</a></li>
                 <li>phone: 09876543298</li>
             </ul>
+            <a href="#title"><i class="fa-solid fa-angles-up" alt="2 upward chevrons"></i></a>
 
         </section>
     </main>
@@ -140,8 +136,10 @@
     <!---------------------Footer------------------------------------------->
 
 <footer>
-    <p>LinkedIn icon</p>
-    <p>GitHub icon</p>
-    <p>Instagram icon</p>
+    <div>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in" alt="linkedin logo"></i></a>
+        <a href="https://github.com/E-Davies/" target="_blank"><i class="fa-brands fa-github" alt="github logo"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" alt="instagram logo"></i></a>
+    </div>
 </footer>
 </html>
