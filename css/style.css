@@ -21,9 +21,22 @@ header, #about-me, #my-work, #contact-me {
 
 header {
     padding: 20px; 
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
+}
+
+header > div {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    /* background-color: blue; */
+}
+
+header i {
+    /* position: relative;
+    top: -15px; */
+    font-size: 100px;
+    margin-left: 90px;
 }
 
 h1 {
@@ -227,11 +240,25 @@ main {
 
 #contact-me {
     margin-bottom: 50px;
+    font-size: 20px;
 }
 
 #contact-me ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 30px;
+    list-style-type: none;
 }
+
+#contact-me li {
+    padding: 10px;
+}
+
+li span {
+    font-weight: 900;
+}
+
 
 #contact-me i {
     font-size: 30px;
