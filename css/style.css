@@ -152,7 +152,7 @@ main {
 
 #project1 {
     grid-area: project1;
-    background-image: url("../images/snake2.JPG");
+    background-image: url("../images/snake2.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-color: white;
