@@ -7,6 +7,7 @@
 
 body {
     background-color: #1A1A12;
+    overflow-x: hidden;
 }
 
 header, #about-me, #my-work, #contact-me {
@@ -93,6 +94,7 @@ nav {
     color: white;
     padding: 20px;
     border-radius: 3px;
+    font-size: 30px;
 }
 
 /* --------------------------------Main------------------------------------------- */
