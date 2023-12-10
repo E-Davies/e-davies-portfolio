@@ -34,4 +34,5 @@ This website will be used by employers looking to hire and allow them to discove
 
 ## Technical skills used in this project
 
-* HTML * CSS
+* HTML
+* CSS
