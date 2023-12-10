@@ -32,6 +32,6 @@ Please use the following link to access the website: https://e-davies.github.io/
 
 This website will be used by employers looking to hire and allow them to discover my ability and skills as a front-end developer.
 
-## Technical Skills Used in this project
+## Technical skills used in this project
 
-https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
+* HTML * CSS
